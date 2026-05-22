@@ -56,6 +56,8 @@
     Scikit-learn
     Jupyter Notebook
 
+    Live Project : https://house-price-prediction-project-6u28.onrender.com/
+
 
 🚀 Outcome
 
