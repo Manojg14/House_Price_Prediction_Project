@@ -6,6 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 import json
+import os
 
 app = Flask(__name__)
 
@@ -147,4 +148,5 @@ def model_info():
     })
 
 if __name__ == '__main__':
-    app.run(debug=True, host='localhost', port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
